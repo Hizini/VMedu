@@ -1,0 +1,66 @@
+.div, span {
+    border : 5px solid black;
+}
+.video{
+    width: 50%;
+    height: 600px;
+}
+.display_none{
+    display: none;
+}
+.visibility{
+    visibility: hidden;
+}
+.block{
+    display: block;
+    width: 100px; border: 3px solid yellow;
+}
+.inline{
+    display: inline;
+    width: 300px; border: 3px solid red;
+}
+.inline_block{
+    display: inline-block;
+    width: 300px; 
+    height: 50px;
+    border: 3px solid blue;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 150px 50px 300px;
+    grid-template-rows: 300px 100px 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.one{
+    background-color: rosybrown;
+    grid-column-end: span 2;
+}
+.two{
+    background-color: royalblue;
+}
+.three{
+    background-color: sandybrown;
+}
+.four{
+    background-color: seagreen;
+}
+.five{
+    background-color: slategrey;
+}
+.six{
+    background-color: turquoise;
+    grid-column-end: span 3;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid purple;
+    background-color: springgreen;
+}
+.item{
+    background-color: tomato;
+    border: 1px solid black;
+    margin: 5px;
+}

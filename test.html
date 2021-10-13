@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        div, span {
-            border : 5px solid black;
-        }
-
-    </style>
 </head>
 <body>
-    <div>
+    <div class="div">
         div
+    </div>
+    <div class="div">
+        div2
     </div>
     <br>
     <span>
@@ -26,8 +23,32 @@
     </span>
     <br><br>
     <img src="img.jpeg" alt="vmimg" width="10%">
+    <div class="div">
+        <img class="display_none" src="img.jpeg" alt="vmimg" width="10%">
+    </div>
+    <div class="div">
+        <img class="visibility" src="img.jpeg" alt="vmimg" width="10%">
+    </div>
+    
+    <p>
+        videom<div class="block">block</div>onstervideomonster<span class="inline">inline</span>videomonstervideomonstervideomonstervideom<span class="inline_block">inline block</span>onstervideomonstervideomonstervideomonstervideomonstervideomonstervideomonster
+    </p>
+    <div class="grid">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+      </div>
+    
+      <div class="flex">
+          <div class="item">flex1</div>
+          <div class="item">flex2</div>
+          <div class="item">flex3</div>
+      </div>
     <br>
     <video class="video" src="video.mp4" poster="img2.jpeg" controls></video>
-    <video wideth="600px" height="600px" src="video.mp4" autoplay muted loop></video>
+    <video  height="600px" src="video.mp4" autoplay muted loop></video>
 </body>
 </html>
