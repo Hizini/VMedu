@@ -1,4 +1,4 @@
-.div, span {
+.div, .span {
     border : 5px solid black;
 }
 .video{
@@ -290,3 +290,101 @@
     padding: 100px;
     font-size: 30px;
 }
+.font-color1{
+    color: olive;
+}
+.font-color2{
+    color: darkcyan;
+}
+.font-color3{
+    color: firebrick;
+}
+.font-size1{
+    font-size: 50px;
+}
+.font-size2{
+    font-size: large;
+}
+.font-size3{
+    font-size: 7em;
+}
+.font-weight1{
+    font-weight: 100;
+}
+.font-weight2{
+    font-weight: 200;
+}
+.font-weight3{
+    font-weight: 300;
+}
+.font-weight4{
+    font-weight: 400;
+}
+.font-weight5{
+    font-weight: 500;
+}
+.font-weight6{
+    font-weight: 600;
+}
+.font-weight7{
+    font-weight: 700;
+}
+.font-weight8{
+    font-weight: 800;
+}
+.font-weight9{
+    font-weight: 900;
+}
+.a{
+    line-height: 50%;
+}
+.b{
+    line-height: 160%;
+}
+.c{
+    line-height: 20px;
+}
+.line-height, .white-space{
+    color:blue;
+}
+.aa{
+    letter-spacing: normal;
+}
+.bb{
+    letter-spacing: 0.4 em;
+}
+.cc{
+    letter-spacing: 1em;
+}
+.dd{
+    letter-spacing: -0.5em;
+}
+.ee{
+    letter-spacing: 10px;
+}
+.aaa { font-family: Georgia, serif; }
+.bbb { font-family: serif; }
+.ccc { font-family: sans-serif; }
+.ddd { font-family: monospace; }
+.eee { font-family: cursive; }
+.fff{ font-family: fantasy; }
+.ggg { font-family: Georgia, "맑은 고딕", serif; }
+.aaaa{white-space: nowrap;}
+.bbbb{white-space: normal;}
+.cccc{white-space: pre;}
+.dddd{white-space: pre-wrap;}
+.eeee{white-space: pre-line;}
+.aaaaa{
+    white-space: nowrap; 
+    width: 150px; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 1px solid #000000;
+}
+.bbbbb{
+    white-space: nowrap; 
+    width: 150px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
+  }
