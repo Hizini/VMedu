@@ -58,8 +58,42 @@
     border: 3px solid purple;
     background-color: springgreen;
 }
-.item{
+.item, .item2{
     background-color: tomato;
     border: 1px solid black;
     margin: 5px;
+}
+.flex2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 3px solid purple;
+    background-color: springgreen;
+}
+.overflow{
+    border: 1px solid black;
+    width :40%;
+}
+.overflow1{
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 20px;
+    float: left;
+}
+.overflow2{
+    overflow: scroll; 
+    width: 100px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 20px;
+    float: left;
+}
+.overflow3{
+    overflow: auto;
+    width: 100px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 20px;
 }
