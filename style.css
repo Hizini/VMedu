@@ -100,6 +100,7 @@
   }
   .border-ex{
     padding: 5px;
+    margin: 5px;
     border: 4px dotted green;
     border-left: double tomato;
     border-bottom: 5px solid blue;
@@ -204,4 +205,39 @@ input:checked ~ .transition {
     height: 200px;
     border-radius: 0;
     background-color: gold;
+}
+.object-fit{
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+}
+.fill{
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+.contain{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.cover{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.none{
+    width: 300px;
+    height: 300px;
+    object-fit: none;
+}
+.class{
+    background-color: skyblue;
+}
+#id{
+    background-color: navajowhite;
+}
+p{
+    background-color: red !important;
+    font-size: 30px;
 }
