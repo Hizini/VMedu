@@ -8,295 +8,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>1. div 태그</h1>
+    <h1>1. position</h1>
+    <h3>1-1 position: relative</h3>
     <div class="div">
-        div
+        <span class="top" id="position">top 5px</span>
+        <span class="right" id="position">right 5px</span>
+        <span class="bottom" id="position">bottom 5px</span>
+        <span class="left" id="position">left 5px</span>
+        <div class="left" id="position">left 5px</div>
+        <span class="top2" id="position">top 20%</span>
+        <span class="right2" id="position">right 5%</span>
+        <span class="bottom2" id="position">bottom -50%</span>
+        <span class="left2" id="position">left 50%</span>
     </div>
-    <div class="div">
-        div2
-    </div>
-    <h1>2. span 태그</h1>
-    <span class="span">
-        span
-    </span>
-    <span class="span">
-        span2
-    </span>
-    <h1>3. img 태그</h1>
-    <img src="img.jpeg" alt="vmimg" width="10%">
-    <h1>4. display: none</h1>
-    <div class="div">
-        <img class="display_none" src="img.jpeg" alt="vmimg" width="10%">
-    </div>
-    <h1>5. visibility: hidden</h1>
-    <div class="div">
-        <img class="visibility" src="img.jpeg" alt="vmimg" width="10%">
-    </div>
-    <h1>6. display: block, inline, inline_block</h1>
-    <p>
-        videom<div class="block">block</div>onstervideomonster<span class="inline">inline</span>videomonstervideomonstervideomonstervideom<span class="inline_block">inline block</span>onstervideomonstervideomonstervideomonstervideomonstervideomonstervideomonster
-    </p>
-    <h1>7. display: grid</h1>
-    <div class="grid">
-        <div class="one">1</div>
-        <div class="two">2</div>
-        <div class="three">3</div>
-        <div class="four">4</div>
-        <div class="five">5</div>
-        <div class="six">6</div>
+    <h3>1-2 position: absolute</h3>
+    <div>
+        <div class="absolute" id="absolute">absolute</div>
       </div>
-    <h1>8. display: flex</h1>
-    <h3>8-1. flex-direction</h3>
-    <div class="flex3">
-        <div class="item">flex</div>
-        <div class="item">direction</div>
-        <div class="item">row</div>
+      <div class="parent" id="absolute">
+        <div class="child" >children</div>
+      </div>
+      <h3>1-3 position: fixed</h3>
+      <div class="fixed" id="fixed">fixed (고정)</div>
+      <h1>2. background, borer</h1>
+      <h3>2-1. background</h3>
+      <div class="background">
+        <div class="bg-color">background-color<br>rgba(238, 178, 178, 0.5)</div>
+        <div class="bg-image">background-image</div>
+        <div class="bg-repeat">background-repeat</div>
+        <div class="bg-repeat-x">background-repeat-x</div>
+        <div class="bg-repeat-y">background-repeat-y</div>
+      </div>
+      <h3>2-2. border</h3>
+      <div class="border-styles">
+        <span style="border-style: solid">solid</span>
+        <span style="border-style: dotted">dotted</span>
+        <span style="border-style: dashed">dashed</span>
+        <span style="border-style: double">double</span>
+        <span style="border-style: groove">groove</span>
+        <span style="border-style: ridge">ridge</span>
+        <span style="border-style: inset">inset</span>
+        <span style="border-style: outset">outset</span>
+        <p class="border-ex">border style example</p>
+        <span class="border-radius">border radius</span>
+        <span class="border-radius2">border radius example</span>
+        <p class="border-ex2">border style example2</p>
     </div>
-    <div class="flex4">
-        <div class="item">flex</div>
-        <div class="item">direction</div>
-        <div class="item">row-reverse</div>
+    <h1>3. 크기</h1>
+    <div class="mother">
+        <img src="img2.jpeg" alt="img">
     </div>
-    <div class="flex5">
-        <div class="item">flex</div>
-        <div class="item">direction</div>
-        <div class="item">column</div>
+    <div class="mother">max-width 100%
+        <img class="a" src="img2.jpeg" alt="img">
     </div>
-    <div class="flex6">
-        <div class="item">flex</div>
-        <div class="item">direction</div>
-        <div class="item">column-reverse</div>
+    <div class="father">max-height 50%
+        <img class="b" src="img2.jpeg" alt="img">
     </div>
-    <h3>8-2. flex-wrap</h3>
-    <div class="flex7">
-        <div class="item">flex</div>
-        <div class="item">wrap</div>
-        <div class="item">nowrap</div>
+    <br>min-width: 300px, min-height: 100px <br>
+    <img class="c" src="img2.jpeg" alt="img">
+    <h1>4. @media quary</h1>
+    <div class="small">좁은 화면에서 배경색이 달라집니다.</div>
+    <h1>5. cursor</h1>
+    <div class="cursors">
+        <span style="cursor: auto">Auto</span>
+        <span style="cursor: crosshair">Crosshair</span>
+        <span style="cursor: default">Default</span>
+        <span style="cursor: pointer">Pointer</span>
+        <span style="cursor: move">Move</span>
+        <span style="cursor: e-resize">e-resize</span>
+        <span style="cursor: ne-resize">ne-resize</span>
+        <span style="cursor: nw-resize">nw-resize</span>
+        <span style="cursor: n-resize">n-resize</span>
+        <span style="cursor: se-resize">se-resize</span>
+        <span style="cursor: sw-resize">sw-resize</span>
+        <span style="cursor: s-resize">s-resize</span>
+        <span style="cursor: w-resize">w-resize</span>
+        <span style="cursor: text">Text</span>
+        <span style="cursor: wait">Wait</span>
+        <span style="cursor: help">Help</span>
     </div>
-    <div class="flex8">
-        <div class="item">flex</div>
-        <div class="item">wrap</div>
-        <div class="item">wrap</div>
-    </div>
-    <div class="flex9">
-        <div class="item">flex</div>
-        <div class="item">wrap</div>
-        <div class="item">wrap-reverse</div>
-    </div>
-    <h3>8-3. flex-flow</h3>
-    <h4>justify-content (주축정렬) </h4>
-    <div class="flex10">
-        <div class="item">justify-content</div>
-        <div class="item">flex</div>
-        <div class="item">start</div>
-    </div>
-    <div class="flex11">
-        <div class="item">justify-content</div>
-        <div class="item">flex</div>
-        <div class="item">end</div>
-    </div>
-    <div class="flex12">
-        <div class="item">justify-content</div>
-        <div class="item">center</div>
-    </div>
-    <div class="flex13">
-        <div class="item">justify-content</div>
-        <div class="item">space</div>
-        <div class="item">between</div>
-    </div>
-    <div class="flex14">
-        <div class="item">justify-content</div>
-        <div class="item">space</div>
-        <div class="item">around</div>
-    </div>
-    <div class="flex15">
-        <div class="item">justify-content</div>
-        <div class="item">space</div>
-        <div class="item">evenly</div>
-    </div>
-    <h4>align-items (교차축 정렬) </h4>
-    <div class="flex16">
-        <div class="item">align-items</div>
-        <div class="item2">stretch</div>
-    </div>
-    <div class="flex17">
-        <div class="item">align-items</div>
-        <div class="item2">flex</div>
-        <div class="item3">start</div>
-    </div>
-    <div class="flex18">
-        <div class="item">align-items</div>
-        <div class="item2">flex</div>
-        <div class="item3">end</div>
-    </div>
-    <div class="flex19">
-        <div class="item">align-items</div>
-        <div class="item2">center</div>
-        <div class="item3">center</div>
-    </div>
-    <div class="flex20">
-        <div class="item">align-items</div>
-        <div class="item2">baseline</div>
-        <div class="item3">baseline</div>
-    </div>
-    <h3>8-3. flex-basis (속성)</h3>
-    <div class="flex21">
-        <div class="item21">flex</div>
-        <div class="item21">basis</div>
-        <div class="item21">100px</div>
-    </div>
-    <div class="flex22">
-        <div class="item22">flex</div>
-        <div class="item22">basis</div>
-        <div class="item22">auto</div>
-    </div>
-    <h3>8-3. flex-grow (속성)</h3>
-    <div class="flex23">
-        <div class="item23">flex</div>
-        <div class="item23">grow</div>
-        <div class="item23">1</div>
-    </div>
-    <div class="flex24">
-        <div class="item24">flex</div>
-        <div class="item24">grow</div>
-        <div class="item24">0</div>
-    </div>
-    <h3>8-3. align-self (속성)</h3>
-    <div class="flex25">
-        <div class="item25-1">aaa</div>
-        <div class="item25-2">bbb</div>
-        <div class="item25-3">ccc</div>
-        <div class="item25-4">ddd</div>
-        <div class="item25-5">eee</div>
-    </div>
-    <h1>9. overflow</h1>
-    <div class="overflow">
-        <h2>노래 가사</h2>
-        <div class="overflow1">
-            <h3>overflow:hidden</h3>
-            <p><b>노라조-형</b>
-                삶이란 시련과 같은 말이야
-                고개좀 들고 어깨펴 짜샤
-                형도 그랬단다
-                죽고싶었지만 견뎌 보니
-                괜찮더라
-                
-                맘껏 울어라
-                억지로 버텨라
-                내일은 내일의
-                해가 뜰테니
-                
-                바람이 널 흔들고
-                소나기 널 적셔도
-                살아야 갚지 않겠니            
-            </p>
-        </div>
-        <div class="overflow2">
-            <h3>overflow:scroll</h3>
-            <p><b>노라조-형</b>
-                삶이란 시련과 같은 말이야
-                고개좀 들고 어깨펴 짜샤
-                형도 그랬단다
-                죽고싶었지만 견뎌 보니
-                괜찮더라
-                
-                맘껏 울어라
-                억지로 버텨라
-                내일은 내일의
-                해가 뜰테니
-                
-                바람이 널 흔들고
-                소나기 널 적셔도
-                살아야 갚지 않겠니            
-            </p>
-        </div>
-        <div class="overflow3">
-            <h3>overflow:auto</h3>
-            <p><b>노라조-형</b>
-                삶이란 시련과 같은 말이야
-                고개좀 들고 어깨펴 짜샤
-                형도 그랬단다
-                죽고싶었지만 견뎌 보니
-                괜찮더라
-                
-                맘껏 울어라
-                억지로 버텨라
-                내일은 내일의
-                해가 뜰테니
-                
-                바람이 널 흔들고
-                소나기 널 적셔도
-                살아야 갚지 않겠니            
-            </p>
-        </div>
-    </div>
-    <h1>10. video 태그</h1>
-    <video class="video" src="video.mp4" poster="img2.jpeg" controls></video>
-    <video  height="600px" src="video.mp4" autoplay muted loop></video>
-    <h1>11. margin, border, padding 속성</h1>
-    <div class="box">margin: 50px<br>padding: 100px<br>border-radius 30px</div> 
-    <h1>12. font 속성</h1>
-    <h3>12-1. color</h3>
-    <span class="font-color1">olive</span>
-    <span class="font-color2">darkcyan</span>
-    <span class="font-color3">firebrick</span>
-    <h3>12-2. font-size</h3>
-    <span class="font-size1">50px</span>
-    <span class="font-size2">large</span>
-    <span class="font-size3">7em</span>
-    <h3>12-3. font-weight</h3>
-    <span class="font-weight1">100</span>
-    <span class="font-weight2">200</span>
-    <span class="font-weight3">300</span>
-    <span class="font-weight4">400, normal</span>
-    <span class="font-weight5">500</span>
-    <span class="font-weight6">600</span>
-    <span class="font-weight7">700, bold</span>
-    <span class="font-weight8">800</span>
-    <span class="font-weight9">900</span>
-    <h3>12-4. line-height</h3>
-    <h4 class="line-height">line-height: 50%</h4>
-    <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="line-height">line-height: 160%</h4>
-    <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="line-height">line-height: 20px</h4>
-    <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>    
-    <h3>12-5. letter-spacing</h3>
-    <p class="aa">글자 간격 normal</p>
-    <p class="bb">글자 간격 0.4 em</p>
-    <p class="cc">글자 간격 1em</p>
-    <p class="dd">글자 간격 -0.5em</p>
-    <p class="ee">글자 간격 10px</p>
-    <h3>12-6. font-family</h3>
-    <p class="aaa">font-family: Geogia;</p>
-    <p class="bbb">font-family: serif;</p>
-    <p class="ccc">font-family: sans-serif;</p>
-    <p class="ddd">font-family: monospace;</p>
-    <p class="eee">font-family: cursive;</p>
-    <p class="fff">font-family: fantasy;</p>
-    <p class="ggg">한글은 맑은 고딕, English is Georgia</p>
-    <h3>12-7. white-space</h3>
-    <h4 class="white-space">white-space: nowrap</h4>
-    <p class="aaaa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="white-space">white-space: nomal</h4>
-    <p class="bbbb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="white-space">white-space: pre</h4>
-    <p class="cccc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. 
-        Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="white-space">white-space: pre</h4>
-    <p class="cccc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. 
-        Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="white-space">white-space: pre-wrap</h4>
-    <p class="dddd">Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Aenean nec mollis nulla. 
-            Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h4 class="white-space">white-space: pre-line</h4>
-    <p class="eeee">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</p>
-    <h3>12-8. text-overflow</h3>
-    <div class="aaaaa">text-overflow: clip</div>
-    <div class="bbbbb">text-overflow: ellipsis1</div>
+    <h1>6. transform</h1>
+    <div class="transform1">translate</div>
+    <div class="transform2">rotate</div>
+    <div class="transform3">scale</div>
+    <h1>7. transition</h1>
+    <input type="checkbox">
+    <div class="transition"></div>
+</body>
+</body>
 </body>
 </html>
